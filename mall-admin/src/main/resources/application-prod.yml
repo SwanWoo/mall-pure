@@ -21,7 +21,8 @@ spring:
       timeout: 300ms # 连接超时时间（毫秒）
 
 minio:
-  endpoint: http://minio:9090 #MinIO服务所在地址
+  endpoint: http://minio:9000 #MinIO服务所在地址（容器内部访问）
+  externalEndpoint: http://117.50.190.225/minio-files #MinIO外网访问地址（通过Nginx反代）
   bucketName: mall #存储桶名称
   accessKey: minioadmin #访问的key
   secretKey: minioadmin #访问的秘钥

@@ -31,6 +31,8 @@ public class MinioController {
     private static final Logger LOGGER = LoggerFactory.getLogger(MinioController.class);
     @Value("${minio.endpoint}")
     private String ENDPOINT;
+    @Value("${minio.externalEndpoint:}")
+    private String EXTERNAL_ENDPOINT;
     @Value("${minio.bucketName}")
     private String BUCKET_NAME;
     @Value("${minio.accessKey}")
@@ -75,7 +77,8 @@ public class MinioController {
             LOGGER.info("文件上传成功!");
             MinioUploadDto minioUploadDto = new MinioUploadDto();
             minioUploadDto.setName(filename);
-            minioUploadDto.setUrl(ENDPOINT + "/" + BUCKET_NAME + "/" + objectName);
+            String urlEndpoint = EXTERNAL_ENDPOINT.isEmpty() ? ENDPOINT : EXTERNAL_ENDPOINT;
+            minioUploadDto.setUrl(urlEndpoint + "/" + BUCKET_NAME + "/" + objectName);
             return CommonResult.success(minioUploadDto);
         } catch (Exception e) {
             e.printStackTrace();
