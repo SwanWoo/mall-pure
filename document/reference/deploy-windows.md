@@ -8,8 +8,8 @@
 ## Eclipse
 
 - 导入项目，以maven项目形式导入  
-    ![eclipse_import_1.png](https://github.com/macrozheng/mall/blob/master/document/resource/eclipse_import_1.png)  
-    ![eclipse_import_2.png](https://github.com/macrozheng/mall/blob/master/document/resource/eclipse_import_2.png)
+    ![eclipse_import_1.png](../resource/eclipse_import_1.png)  
+    ![eclipse_import_2.png](../resource/eclipse_import_2.png)
 - 安装lombok插件，下载地址：https://projectlombok.org/downloads/lombok.jar  
 - 下载完后双击，使用java程序打开
 - 按照提示选择eclipse.exe的安装路径安装插件，完成后重启Eclipse
@@ -70,11 +70,11 @@ elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/
 - 访问地址查看是否安装成功：http://127.0.0.1:15672/
 - 输入账号密码登录：guest guest
 - 创建用户并设置其角色为管理员：mall mall
-    ![rabbitmq_install_2.png](https://github.com/macrozheng/mall/blob/master/document/resource/rabbitmq_install_2.png)
+    ![rabbitmq_install_2.png](../resource/rabbitmq_install_2.png)
 - 创建virtual host:/mall
-    ![rabbitmq_install_3.png](https://github.com/macrozheng/mall/blob/master/document/resource/rabbitmq_install_3.png)
+    ![rabbitmq_install_3.png](../resource/rabbitmq_install_3.png)
 - 给mall用户配置范围该virtual host的权限
-    ![rabbitmq_install_4.png](https://github.com/macrozheng/mall/blob/master/document/resource/rabbitmq_install_4.png)
+    ![rabbitmq_install_4.png](../resource/rabbitmq_install_4.png)
 - rabbitmq安装延迟消息插件（可不装）：
     - 下载延迟消息插件（rabbitmq_delayed_message_exchange）：https://www.rabbitmq.com/community-plugins.html
     - 复制插件到插件目录：D:\RabbitMQ Server\rabbitmq_server-3.7.14\plugins

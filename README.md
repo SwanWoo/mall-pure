@@ -1,34 +1,27 @@
 # mall
 
 <p>
-  <a href="#公众号"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%85%AC%E4%BC%97%E5%8F%B7-macrozheng-blue.svg" alt="公众号"></a>
-  <a href="#公众号"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E4%BA%A4%E6%B5%81-%E5%BE%AE%E4%BF%A1%E7%BE%A4-2BA245.svg" alt="交流"></a>
-  <a href="https://github.com/macrozheng/mall-learning"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%AD%A6%E4%B9%A0%E6%95%99%E7%A8%8B-mall--learning-green.svg" alt="学习教程"></a>
-  <a href="https://github.com/macrozheng/mall-swarm"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/Cloud%E7%89%88%E6%9C%AC-mall--swarm-brightgreen.svg" alt="SpringCloud版本"></a>
-  <a href="https://github.com/macrozheng/mall-admin-web"><img src="https://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-mall--admin--web-green.svg" alt="后台管理系统"></a>
-  <a href="https://github.com/macrozheng/mall-app-web"><img src="https://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E5%89%8D%E5%8F%B0%E5%95%86%E5%9F%8E%E9%A1%B9%E7%9B%AE-mall--app--web-green.svg" alt="前台商城项目"></a>
-  <a href="https://gitee.com/macrozheng/mall"><img src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/badge/%E7%A0%81%E4%BA%91-%E9%A1%B9%E7%9B%AE%E5%9C%B0%E5%9D%80-orange.svg" alt="码云"></a>
+  <img src="https://img.shields.io/badge/SpringBoot-3.5-brightgreen" alt="SpringBoot">
+  <img src="https://img.shields.io/badge/JDK-17-green" alt="JDK">
+  <img src="https://img.shields.io/badge/License-Apache%202.0-blue" alt="License">
+  <a href="https://github.com/macrozheng/mall-swarm"><img src="https://img.shields.io/badge/Cloud版本-mall--swarm-brightgreen" alt="SpringCloud版本"></a>
+  <a href="https://github.com/macrozheng/mall-admin-web"><img src="https://img.shields.io/badge/后台管理系统-mall--admin--web-green" alt="后台管理系统"></a>
+  <a href="https://github.com/macrozheng/mall-app-web"><img src="https://img.shields.io/badge/前台商城-mall--app--web-green" alt="前台商城项目"></a>
 </p>
 
 ## 友情提示
 
-> 1. **快速体验项目**：[在线访问地址](https://www.macrozheng.com/admin/index.html) 。
-> 2. **全套学习教程**：[《mall学习教程》](https://www.macrozheng.com) 。
-> 3. **视频教程**：[《mall视频教程》](https://www.macrozheng.com/mall/catalog/mall_video.html) 。
-> 4. **微服务版本**：基于Spring Cloud Alibaba的项目：[mall-swarm](https://github.com/macrozheng/mall-swarm) 。
-> 5. **分支说明**：`master`分支基于Spring Boot 3.5+JDK 17，`dev-v2`分支基于Spring Boot 2.7+JDK 8。
+> 1. **微服务版本**：基于Spring Cloud Alibaba的项目：[mall-swarm](https://github.com/macrozheng/mall-swarm) 。
+> 2. **分支说明**：`master`分支基于Spring Boot 3.5+JDK 17，`dev-v2`分支基于Spring Boot 2.7+JDK 8。
+> 3. **最小启动**：如果只启动`mall-admin`模块，仅需安装MySQL、Redis即可。
 
 ## 前言
 
-`mall`项目致力于打造一个完整的电商系统，采用现阶段主流技术实现。
-
-## 项目文档
-
-文档地址：[https://www.macrozheng.com](https://www.macrozheng.com)
+`mall`项目致力于打造一个完整的电商系统，采用现阶段主流技术实现。基于SpringBoot+MyBatis实现，采用Docker容器化部署，包含前台商城系统及后台管理系统。
 
 ## 项目介绍
 
-`mall`项目是一套电商系统，包括前台商城系统及后台管理系统，基于SpringBoot+MyBatis实现，采用Docker容器化部署。前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。
+`mall`项目是一套电商系统，包括前台商城系统及后台管理系统。前台商城系统包含首页门户、商品推荐、商品搜索、商品展示、购物车、订单流程、会员中心、客户服务、帮助中心等模块。后台管理系统包含商品管理、订单管理、会员管理、促销管理、运营管理、内容管理、统计报表、财务管理、权限管理、设置等模块。
 
 ### 项目演示
 
@@ -36,15 +29,11 @@
 
 前端项目`mall-admin-web`地址：https://github.com/macrozheng/mall-admin-web
 
-项目演示地址： [https://www.macrozheng.com/admin/index.html](https://www.macrozheng.com/admin/index.html)  
-
 ![后台管理系统功能演示](./document/resource/mall_admin_show.png)
 
 #### 前台商城系统
 
 前端项目`mall-app-web`地址：https://github.com/macrozheng/mall-app-web
-
-项目演示地址（将浏览器切换为手机模式效果更佳）：[https://www.macrozheng.com/app/](https://www.macrozheng.com/app/)
 
 ![前台商城系统功能演示](./document/resource/re_mall_app_show.jpg)
 
@@ -79,9 +68,7 @@ mall
 | Kibana               | 日志可视化查看工具  | https://github.com/elastic/kibana              |
 | Nginx                | 静态资源服务器      | https://www.nginx.com/                         |
 | Docker               | 应用容器引擎        | https://www.docker.com                         |
-| Jenkins              | 自动化部署工具      | https://github.com/jenkinsci/jenkins           |
 | Druid                | 数据库连接池        | https://github.com/alibaba/druid               |
-| OSS                  | 对象存储            | https://github.com/aliyun/aliyun-oss-java-sdk  |
 | MinIO                | 对象存储            | https://github.com/minio/minio                 |
 | JWT                  | JWT登录支持         | https://github.com/jwtk/jjwt                   |
 | Lombok               | Java语言增强库      | https://github.com/rzwitserloot/lombok         |
@@ -143,26 +130,6 @@ mall
 
 ## 环境搭建
 
-### 开发工具
-
-| 工具          | 说明                | 官网                                            |
-| ------------- | ------------------- | ----------------------------------------------- |
-| IDEA          | 开发IDE             | https://www.jetbrains.com/idea/download         |
-| RedisDesktop  | redis客户端连接工具 | https://github.com/qishibo/AnotherRedisDesktopManager  |
-| Robomongo     | mongo客户端连接工具 | https://robomongo.org/download                  |
-| SwitchHosts   | 本地host管理        | https://oldj.github.io/SwitchHosts/             |
-| X-shell       | Linux远程连接工具   | http://www.netsarang.com/download/software.html |
-| Navicat       | 数据库连接工具      | http://www.formysql.com/xiazai.html             |
-| PowerDesigner | 数据库设计工具      | http://powerdesigner.de/                        |
-| Axure         | 原型设计工具        | https://www.axure.com/                          |
-| MindMaster    | 思维导图设计工具    | http://www.edrawsoft.cn/mindmaster              |
-| ScreenToGif   | gif录制工具         | https://www.screentogif.com/                    |
-| ProcessOn     | 流程图绘制工具      | https://www.processon.com/                      |
-| PicPick       | 图片处理工具        | https://picpick.app/zh/                         |
-| Snipaste      | 屏幕截图工具        | https://www.snipaste.com/                       |
-| Postman       | API接口调试工具      | https://www.postman.com/                        |
-| Typora        | Markdown编辑器      | https://typora.io/                              |
-
 ### 开发环境
 
 | 工具          | 版本号 | 下载                                                         |
@@ -181,31 +148,22 @@ mall
 
 > Windows环境部署
 
-- Windows环境搭建请参考：[mall在Windows环境下的部署](https://www.macrozheng.com/mall/deploy/mall_deploy_windows.html);
-- 注意：如果只启动`mall-admin`模块，仅需安装MySQL、Redis即可;
-- 克隆`mall-admin-web`项目，并导入到IDEA中完成编译：[前端项目地址](https://github.com/macrozheng/mall-admin-web);
-- `mall-admin-web`项目的安装及部署请参考：[mall前端项目的安装与部署](https://www.macrozheng.com/mall/deploy/mall_deploy_web.html) 。
+- Windows环境搭建请参考：[mall在Windows环境下的部署](document/reference/deploy-windows.md);
+- 克隆`mall-admin-web`项目，并导入到IDEA中完成编译：[前端项目地址](https://github.com/macrozheng/mall-admin-web)。
 
 > Docker环境部署
 
-- 使用虚拟机安装CentOS7.6请参考：[虚拟机安装及使用Linux，看这一篇就够了](https://www.macrozheng.com/tool/linux_install.html);
-- 本项目Docker镜像构建请参考：[使用Maven插件为SpringBoot应用构建Docker镜像](https://www.macrozheng.com/project/maven_docker_fabric8.html);
-- 本项目在Docker容器下的部署请参考：[mall在Linux环境下的部署（基于Docker容器）](https://www.macrozheng.com/mall/deploy/mall_deploy_docker.html);
-- 本项目使用Docker Compose请参考： [mall在Linux环境下的部署（基于Docker Compose）](https://www.macrozheng.com/mall/deploy/mall_deploy_docker_compose.html);
-- 本项目在Linux下的自动化部署请参考：[mall在Linux环境下的自动化部署（基于Jenkins）](https://www.macrozheng.com/mall/deploy/mall_deploy_jenkins.html);
+- **本项目完整Docker部署手册（含13条踩坑记录）**：[Docker部署手册](document/reference/deploy-docker.md)；
 
-> 相关环境部署
+## 贡献
 
-- ELK日志收集系统的搭建请参考：[mall项目ELK日志收集解决方案](https://www.macrozheng.com/project/mall_kibana_start.html);
-- 使用MinIO存储文件请参考：[使用MinIO实现文件存储](https://www.macrozheng.com/project/minio_console_start.html);
-- 读写分离解决方案请参考：[你还在代码里做读写分离么，试试这个中间件吧](https://www.macrozheng.com/project/gaea.html);
-- Redis集群解决方案请参考：[Docker环境下秒建Redis集群](https://www.macrozheng.com/blog/redis_cluster.html) 。
+欢迎提交 Issue 和 Pull Request 参与贡献！
 
-## 公众号
-
-加微信群交流，关注公众号「**macrozheng**」，回复「**加群**」即可。
-
-![公众号图片](./document/resource/qrcode_for_macrozheng_258.jpg)
+1. Fork 本仓库
+2. 新建分支：`git checkout -b feature/your-feature`
+3. 提交改动：`git commit -m 'Add some feature'`
+4. 推送分支：`git push origin feature/your-feature`
+5. 提交 Pull Request
 
 ## 许可证
 

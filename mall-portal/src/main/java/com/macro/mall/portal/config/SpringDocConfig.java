@@ -28,10 +28,10 @@ public class SpringDocConfig implements WebMvcConfigurer {
                         .description("mall前台相关接口文档")
                         .version("v1.0.0")
                         .license(new License().name("Apache 2.0")
-                                .url("https://github.com/macrozheng/mall-learning")))
+                                .url("https://github.com/macrozheng/mall")))
                 .externalDocs(new ExternalDocumentation()
                         .description("SpringBoot实战电商项目mall（60K+Star）全套文档")
-                        .url("http://www.macrozheng.com"))
+                        .url("https://github.com/macrozheng/mall"))
                 .addSecurityItem(new SecurityRequirement().addList(SECURITY_SCHEME_NAME))
                 .components(new Components()
                         .addSecuritySchemes(SECURITY_SCHEME_NAME,

@@ -1,0 +1,46 @@
+services:
+  mall-admin:
+    image: mall/mall-admin:1.0-SNAPSHOT
+    container_name: mall-admin
+    ports:
+      - 8080:8080
+    volumes:
+      - /mydata/app/mall-admin/logs:/var/logs
+      - /etc/localtime:/etc/localtime
+    environment:
+      - 'TZ=Asia/Shanghai'
+      - 'spring.profiles.active=prod'
+    networks:
+      - mall-network
+
+  mall-search:
+    image: mall/mall-search:1.0-SNAPSHOT
+    container_name: mall-search
+    ports:
+      - 8081:8081
+    volumes:
+      - /mydata/app/mall-search/logs:/var/logs
+      - /etc/localtime:/etc/localtime
+    environment:
+      - 'TZ=Asia/Shanghai'
+      - 'spring.profiles.active=prod'
+    networks:
+      - mall-network
+
+  mall-portal:
+    image: mall/mall-portal:1.0-SNAPSHOT
+    container_name: mall-portal
+    ports:
+      - 8085:8085
+    volumes:
+      - /mydata/app/mall-portal/logs:/var/logs
+      - /etc/localtime:/etc/localtime
+    environment:
+      - 'TZ=Asia/Shanghai'
+      - 'spring.profiles.active=prod'
+    networks:
+      - mall-network
+
+networks:
+  mall-network:
+    external: true
